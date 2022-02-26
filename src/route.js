@@ -28,36 +28,9 @@ const App = () => {
             <Stack.Screen
               name="Noodls"
               component={Noodls}
-            // options={{
-            //   // headerShown: false,
-            //   title: null,
-            //   headerTransparent: true,
-            //   headerRight: () => (
-            //     <View>
-            //       <Image source={require("./assets/Logo.png")} style={{
-            //         height: wp('8%'),
-            //         width: wp('8%'),
-            //       }} />
-            //     </View>
-            //   ),
-            // }}
             />
             <Stack.Screen name="Details"
               component={Details}
-            // options={{
-            //   title: null,
-            //   headerTransparent: true,
-            //   headerTintColor: '#fff',
-            //   headerBackTitleVisible: false,
-            //   headerRight: () => (
-            //     <View>
-            //       <Image source={require("./assets/Logo.png")} style={{
-            //         height: wp('8%'),
-            //         width: wp('8%'),
-            //       }} />
-            //     </View>
-            //   ),
-            // }}
             />
           </Stack.Navigator>
         </NavigationContainer>

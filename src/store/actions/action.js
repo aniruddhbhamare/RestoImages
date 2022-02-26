@@ -1,16 +1,13 @@
 import * as types from '../actionsTypes';
 
 export const getRamenRestaurantdetails = () => {
-  // alert("inside action")
   return dispatch => {
     dispatch(getRestoData())
     // dispatch(getImageData())
-    // fetch('https://retoolapi.dev/2feJeM/carddata')
     fetch('https://accubits-image-assets.s3.ap-southeast-1.amazonaws.com/john/TopRamen8d30951.json')
       .then((response) => response.json())
       .then((json) => {
         // return json;
-        // alert(JSON.stringify(json))
         console.log("RestoData", JSON.stringify(json))
 
         dispatch(addRestoData(json))
@@ -18,7 +15,6 @@ export const getRamenRestaurantdetails = () => {
       .catch((error) => {
         console.error(error);
       });
-    // return addCardData(data);
   }
 }
 
@@ -38,7 +34,6 @@ export const getImageData = () => {
     fetch('https://accubits-image-assets.s3.ap-southeast-1.amazonaws.com/john/noodlesec253ad.json')
       .then((response) => response.json())
       .then((json) => {
-        // alert(JSON.stringify(json))
         console.log("ImageData", JSON.stringify(json))
         dispatch(addImageData(json))
       })

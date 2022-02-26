@@ -11,5 +11,3 @@ export const Colors = {
     DB: '#DDDDDD',
     TL: 'gray'
 }
-// 2B24, 25CF, 26AB,
-export const bulletChar = `\u25CF\u25CF\u25CF\u25CF  \u25CF\u25CF\u25CF\u25CF  \u25CF\u25CF\u25CF\u25CF  \u25CF\u25CF\u25CF\u25CF`

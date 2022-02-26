@@ -23,12 +23,3 @@ const ramenRestaurantdetailsReducer = (state = initialState, action) => {
 
 export default ramenRestaurantdetailsReducer;
 
-
-
-// const getData = () => {
-//     setLoading(true);
-//     Promise.all([fetch('api-1'), fetch('api-2')]).then(results => {
-//      setDataOne(results[0]);
-//      setDataTwo(results[1]);
-//     }).finally(() => setLoading(false));
-//     }
